@@ -1,0 +1,8 @@
+@use "./base/colors";
+@use "./base/reset";
+@use "./layout/header";
+@use "./layout/footer";
+
+body {
+  background-color: colors.$bg-color;
+}
