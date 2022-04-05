@@ -1,0 +1,25 @@
+@use "../base/colors";
+
+.form-section {
+  max-width: 30rem;
+  margin: auto;
+
+  padding-top: 5rem;
+}
+
+form {
+  margin-top: 2rem;
+}
+
+input[type="text"] {
+  width: 60%;
+}
+
+input,
+select {
+  background-color: colors.$form-btn-bg;
+  color: colors.$body-text;
+  box-shadow: inset 0 0 10px #000000;
+  height: 2rem;
+  border-radius: 10px;
+}

@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+%body-text-font {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+%headline-font {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  letter-spacing: 5px;
+  text-align: center;
+  line-height: 70px;
+}
+
+p,
+label {
+  @extend %body-text-font;
+}
+
+h1 {
+  @extend %headline-font;
+}

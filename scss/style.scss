@@ -1,8 +1,17 @@
-@use "./base/colors";
 @use "./base/reset";
+@use "./base/colors";
+@use "./base/fonts";
+
 @use "./layout/header";
 @use "./layout/footer";
 
+@use "./components/form";
+
 body {
-  background-color: colors.$bg-color;
+  @extend %bg-color;
+}
+
+main {
+  height: 100vh;
+  color: colors.$body-text;
 }

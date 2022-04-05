@@ -1,2 +1,14 @@
-$bg-color: white;
+%bg-color {
+  background: rgb(0, 5, 9);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 5, 9, 1) 27%,
+    rgba(21, 61, 91, 1) 100%
+  );
+  nd-repeat: no-repeat;
+}
+
 $header-color: black;
+$body-text: white;
+
+$form-btn-bg: #0b2233;
