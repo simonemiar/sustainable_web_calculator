@@ -9,6 +9,9 @@
 
 form {
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 input[type="text"] {
@@ -22,4 +25,17 @@ select {
   box-shadow: inset 0 0 10px #000000;
   height: 2rem;
   border-radius: 10px;
+
+  margin-left: 0.5rem;
+  padding-left: 1rem;
+}
+
+select {
+  appearance: none;
+  width: 45%;
+
+  background-image: url("../../public/down_arrow.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) 0.8rem;
+  background-size: 13px;
 }
