@@ -1,10 +1,9 @@
 @use "../base/colors";
 
 .form-section {
-  max-width: 30rem;
-  margin: auto;
-
   padding-top: 5rem;
+  width: 90%;
+  margin: auto;
 }
 
 form {
@@ -12,13 +11,16 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  max-width: 80%;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
-input[type="text"] {
-  width: 60%;
-}
-
-input,
+input[type="text"],
 select {
   background-color: colors.$form-btn-bg;
   color: colors.$body-text;
@@ -26,16 +28,44 @@ select {
   height: 2rem;
   border-radius: 10px;
 
-  margin-left: 0.5rem;
+  flex-grow: 1;
   padding-left: 1rem;
 }
 
 select {
   appearance: none;
-  width: 45%;
 
-  background-image: url("../../public/down_arrow.svg");
+  background-image: url("/down_arrow.svg");
   background-repeat: no-repeat;
   background-position: calc(100% - 10px) 0.8rem;
   background-size: 13px;
+}
+
+.send-btn {
+  text-align: center;
+  border-radius: 10px;
+  padding: 0.5rem 0;
+  color: colors.$body-text;
+  background-color: colors.$form-send-bg;
+}
+
+@media only screen and (min-width: 910px) {
+  .form-section {
+    margin-left: auto;
+    margin-right: 3rem;
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form-section {
+    div {
+      flex-direction: column;
+      align-items: initial;
+    }
+  }
+
+  form {
+    max-width: 100%;
+  }
 }

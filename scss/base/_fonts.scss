@@ -8,10 +8,13 @@
 %headline-font {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: 4rem;
-  letter-spacing: 5px;
-  text-align: center;
-  line-height: 70px;
+  font-size: calc(2.5rem + (22 - 2.5) * ((100vw - 300px) / (1600 - 300)));
+  letter-spacing: 3px;
+  padding-bottom: 1rem;
+}
+
+input[type="submit"] {
+  font-size: calc(1.8rem + (18 - 1.8) * ((100vw - 300px) / (1600 - 300)));
 }
 
 p,
