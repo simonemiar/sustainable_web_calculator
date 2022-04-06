@@ -2,6 +2,12 @@
 
 footer {
   width: 100%;
-  color: white;
+  height: 2rem;
+  color: colors.$body-text;
+  border-top: 1px solid colors.$body-text;
+}
+
+.footer-section{
+  height: 5rem;
   background-color: colors.$header-color;
 }
