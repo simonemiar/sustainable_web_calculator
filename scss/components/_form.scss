@@ -13,7 +13,7 @@ form {
   gap: 1.5rem;
   max-width: 80%;
 
-  div {
+  & > div {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -28,7 +28,6 @@ select {
   height: 2rem;
   border-radius: 10px;
 
-  flex-grow: 1;
   padding-left: 1rem;
 }
 
