@@ -32,13 +32,15 @@
         <form action="">
           <div>
             <label for="url_field">Insert your URL here:</label>
-            <input type="text" id="url_field" />
-            <span class="">Please insert a valid URL.</span>
+            <input type="text" id="url_field" required />
+            <span id="error-msg" class="hidden"
+              >Please insert a valid URL.</span
+            >
           </div>
 
           <div>
             <label for="industry_select">Please select your industry:</label>
-            <select name="industries" id="industry_select">
+            <select name="industries" id="industry_select" required>
               <option value="">Please choose an option</option>
               <option value="agriculture">Agriculture</option>
               <option value="financial">Financial sector</option>
