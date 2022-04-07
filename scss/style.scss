@@ -6,10 +6,12 @@
 @use "./layout/footer";
 
 @use "./components/form";
+@use "./components/sharebuttons";
 
 main {
   height: 100vh;
   color: colors.$body-text;
+  padding: 6rem;
 }
 
 body {
