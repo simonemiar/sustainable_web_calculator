@@ -70,6 +70,10 @@ input[type="submit"]:focus {
   outline: 1px solid hotpink;
 }
 
+#error-msg {
+  color: #ff7a00;
+}
+
 @media only screen and (min-width: 910px) {
   .form-section {
     margin-left: auto;
