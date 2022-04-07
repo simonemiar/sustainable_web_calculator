@@ -9,11 +9,55 @@
   <body>
     <style>
       .bar {
-        width: 800px;
         height: 50px;
+      }
+
+      .greenBar {
+        background-color: green;
+      }
+
+      .redBar {
         background-color: red;
       }
     </style>
     <div class="bar"></div>
+    <p class="text"></p>
+
+    <script>
+      const url = "https://georgendesign.com";
+
+      const bar = document.querySelector(".bar");
+      const resultText = document.querySelector(".text");
+
+      async function getCarbonData(url) {
+        const request = await fetch(
+          `https://kea-alt-del.dk/websitecarbon/site/?url=${url}`
+        );
+        const data = await request.json();
+
+        displayData(data);
+      }
+
+      getCarbonData(url);
+
+      function displayData(data) {
+        const cleanerThan = data.cleanerThan;
+
+        if (cleanerThan > 0.5) {
+          bar.classList.add("greenBar");
+          resultText.textContent = `This website is cleaner than ${(
+            cleanerThan * 100
+          ).toFixed(0)}%`;
+        } else {
+          bar.classList.add("redBar");
+          resultText.textContent = `This website is cleaner than ${(
+            (1 - cleanerThan) *
+            100
+          ).toFixed(0)}%`;
+        }
+
+        bar.style.width = `${(data.cleanerThan * 100).toFixed(0) * 10}px`;
+      }
+    </script>
   </body>
 </html>

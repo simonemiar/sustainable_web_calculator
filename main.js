@@ -2,7 +2,7 @@ import "./scss/style.scss";
 
 // page speed insights key:  AIzaSyCJpmbyPCYEITV04onRwPknKcJkdSdEhvU
 
-const url = "http://georgendesign.com/";
+const url = "http://kea.dk/";
 
 async function getCarbonData(url) {
   const request = await fetch(
