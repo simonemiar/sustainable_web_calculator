@@ -14,6 +14,13 @@
   padding-bottom: 1rem;
 }
 
+%headline2-font {
+  font-family: "social-gothic", sans-serif;
+  font-weight: 600;
+  font-size: calc(2rem + (22 - 2.5) * ((100vw - 300px) / (1600 - 300)));
+  letter-spacing: 3px;
+}
+
 input[type="submit"] {
   font-size: calc(1.8rem + (18 - 1.8) * ((100vw - 300px) / (1600 - 300)));
 }
@@ -26,4 +33,8 @@ label {
 
 h1 {
   @extend %headline-font;
+}
+
+h2 {
+  @extend %headline2-font;
 }
