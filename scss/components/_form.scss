@@ -49,6 +49,11 @@ select {
   background-color: colors.$form-send-bg;
 }
 
+input[type="text"]:focus,
+select:focus {
+  outline: 1px solid hotpink;
+}
+
 @media only screen and (min-width: 910px) {
   .form-section {
     margin-left: auto;
