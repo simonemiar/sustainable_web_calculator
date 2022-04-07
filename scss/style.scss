@@ -8,7 +8,7 @@
 @use "./components/form";
 
 body {
-  @extend %bg-color;
+  @include colors.bg-color;
 }
 
 main {
