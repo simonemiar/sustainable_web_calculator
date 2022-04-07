@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://use.typekit.net/fed6jan.css");
 @import url("https://use.typekit.net/fed6jan.css");
 
 %body-text-font {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  font-family: "nimbus-sans", sans-serif;
+  font-weight: 300;
 }
 
 %headline-font {
@@ -14,8 +15,27 @@
   padding-bottom: 1rem;
 }
 
+%headline2-font {
+  font-family: "social-gothic", sans-serif;
+  font-weight: 600;
+  font-size: calc(2rem + (18 - 2) * ((100vw - 300px) / (1600 - 300)));
+  letter-spacing: 3px;
+}
+
+%headline3-font {
+  font-family: "nimbus-sans", sans-serif;
+  font-weight: 300;
+  font-size: calc(1rem + (18 - 1) * ((100vw - 300px) / (1600 - 300)));
+}
+
+%headline4-font {
+  font-family: "nimbus-sans", sans-serif;
+  font-weight: 300;
+  font-size: calc(0.5rem + (18 - 0.5) * ((100vw - 300px) / (1600 - 300)));
+}
+
 input[type="submit"] {
-  font-size: calc(1.8rem + (18 - 1.8) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(1rem + (18 - 1) * ((100vw - 300px) / (1600 - 300)));
 }
 
 p,
@@ -26,4 +46,16 @@ label {
 
 h1 {
   @extend %headline-font;
+}
+
+h2 {
+  @extend %headline2-font;
+}
+
+h3 {
+  @extend %headline3-font;
+}
+
+h4 {
+  @extend %headline4-font;
 }

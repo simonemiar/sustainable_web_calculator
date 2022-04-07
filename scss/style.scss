@@ -6,13 +6,21 @@
 @use "./layout/footer";
 
 @use "./components/form";
+@use "./components/sharebuttons";
 
 main {
   height: 100vh;
   color: colors.$body-text;
+  padding: 6rem;
 }
 
 body {
+  background-image: colors.$bg-color;
+  background-size: cover;
+  width: 100%;
+}
+
+#index_body {
   background-image: url(../../assets/backround.svg), colors.$bg-color;
   background-size: cover;
   width: 100%;
