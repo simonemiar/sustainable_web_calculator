@@ -7,11 +7,13 @@
 
 @use "./components/form";
 
-body {
-  @include colors.bg-color;
-}
-
 main {
   height: 100vh;
   color: colors.$body-text;
+}
+
+body {
+  background-image: url(../../assets/backround.svg), colors.$bg-color;
+  background-size: cover;
+  width: 100%;
 }
