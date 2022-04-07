@@ -67,7 +67,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    // background-color: #133a56; // temporary color until fixed
     @include colors.bg-color;
     transition: all 1s ease;
     border: solid 1px colors.$body-text;
