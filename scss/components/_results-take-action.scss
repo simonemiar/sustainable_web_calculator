@@ -1,0 +1,48 @@
+@use "../base/colors";
+
+.take_action_checkbox {
+  color: colors.$body-text;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox_wrapper {
+  display: flex;
+  //   justify-content: space-evenly;
+  gap: 4rem;
+}
+
+article {
+  width: 100%;
+  margin: 4rem 0 4rem 0;
+}
+
+.action_one {
+  font-size: calc(3rem + (18 - 30) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.action_two {
+  font-size: calc(1.5rem + (18 - 15) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 300;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: colors.$main-blue;
+  background-size: cover;
+  box-shadow: inset 20px 20px 60px colors.$main-blue, inset -20px -20px 60px rgba(0, 5, 9, 1);
+  appearance: none;
+  border-radius: 10%;
+}
+
+@media screen and (max-width: 600px) {
+  .checkbox_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

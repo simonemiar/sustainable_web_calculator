@@ -5,6 +5,7 @@
 @use "./layout/header";
 @use "./layout/footer";
 
+@use "./components/results-take-action";
 @use "./components/form";
 @use "./components/sharebuttons";
 
@@ -28,4 +29,10 @@ body {
 
 .hidden {
   visibility: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    padding: 3rem;
+  }
 }
