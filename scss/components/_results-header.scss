@@ -1,0 +1,59 @@
+@use "../base/fonts";
+@use "../base/colors";
+@use "./progress-bars";
+
+.results-header {
+  //   font-weight: 700;
+  h1 {
+    font-size: 1rem;
+    @extend %body-text-font;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  #results-url {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  #clean-percentage {
+    font-size: 8.5vw;
+    align-self: end;
+    line-height: 11vw;
+  }
+
+  #dd-title {
+    font-size: 1.5rem;
+  }
+
+  dt {
+    color: colors.$clean-color;
+    font-size: 8.5vw;
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+    line-height: 10vw;
+  }
+
+  dd {
+    font-size: 8vw;
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+
+    .results-details {
+      line-height: 10vw;
+    }
+  }
+
+  dl {
+    @extend %headline-font;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    justify-items: end;
+    gap: 6.5rem;
+  }
+}
