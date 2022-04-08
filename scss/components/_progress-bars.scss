@@ -1,6 +1,6 @@
 @use "../base/colors";
 
-.progress {
+@mixin progress {
   background: rgba(255, 255, 255, 0.1);
   justify-content: flex-start;
   border-radius: 100px;
@@ -15,7 +15,7 @@
   box-shadow: inset 20px 20px 20px #04131d, inset -20px -20px 60px #192935;
 }
 
-.progress-value {
+@mixin progress-value {
   animation: load 3s normal forwards;
 
   border-radius: 100px;
@@ -26,11 +26,13 @@
   box-shadow: 5px 5px 5px #04131d, -5px -5px 5px #192935;
 }
 
-@keyframes load {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 68%;
+@mixin load {
+  @keyframes load {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 68%;
+    }
   }
 }

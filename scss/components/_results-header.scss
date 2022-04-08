@@ -57,3 +57,14 @@
     gap: 6.5rem;
   }
 }
+
+.progress {
+  @include progress-bars.progress;
+  @include progress-bars.load;
+}
+
+.progress-value {
+  @include progress-bars.progress-value;
+}
+
+@include progress-bars.load;
