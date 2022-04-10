@@ -40,6 +40,51 @@ input[type="checkbox"] {
   border-radius: 10%;
 }
 
+input[type="checkbox"] :checked {
+  background-color: colors.$form-send-bg;
+  background-size: cover;
+  box-shadow: inset 20px 20px 60px colors.$main-blue, inset -20px -20px 60px rgba(0, 5, 9, 1);
+  appearance: none;
+  border-radius: 10%;
+}
+
+.could_be {
+  //   background: rgba(255, 255, 255, 0.1);
+  //   background: transparent;
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 2.6rem;
+  max-width: 60vw;
+
+  margin: auto;
+  box-shadow: inset 20px 20px 20px #04131d, inset -20px -20px 60px #192935;
+}
+
+.could_be_value {
+  animation: load 3s normal forwards;
+
+  border-radius: 100px;
+  //   background: colors.$main-blue;
+  border: colors.$form-send-bg 3px solid;
+  height: 2rem;
+  width: 0;
+
+  box-shadow: 5px 5px 5px #04131d, -5px -5px 5px #192935;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 68%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .checkbox_wrapper {
     display: flex;
