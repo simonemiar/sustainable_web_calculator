@@ -2,16 +2,17 @@
 
 .take_action_checkbox {
   color: colors.$body-text;
+  margin-top: 1.5rem;
 }
 
 .checkbox {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .checkbox_wrapper {
   display: flex;
-  //   justify-content: space-evenly;
   gap: 4rem;
 }
 
@@ -29,28 +30,27 @@ article {
   font-weight: 300;
 }
 
-input[type="checkbox"] {
-  cursor: pointer;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: colors.$main-blue;
-  background-size: cover;
-  box-shadow: inset 20px 20px 60px colors.$main-blue, inset -20px -20px 60px rgba(0, 5, 9, 1);
+.checkbox > input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
   appearance: none;
-  border-radius: 10%;
+  cursor: pointer;
+
+  height: 3rem;
+  width: 3rem;
+  border-radius: 8px;
+  transition-duration: 0.3s;
+  background-color: colors.$form-send-bg;
 }
 
-input[type="checkbox"] :checked {
-  background-color: colors.$form-send-bg;
-  background-size: cover;
-  box-shadow: inset 20px 20px 60px colors.$main-blue, inset -20px -20px 60px rgba(0, 5, 9, 1);
-  appearance: none;
-  border-radius: 10%;
+.checkbox > input:checked {
+  border: 3px solid colors.$form-send-bg;
+  background-color: transparent;
+  animation: bounce-in 0.3s normal forwards;
 }
 
 .could_be {
-  //   background: rgba(255, 255, 255, 0.1);
-  //   background: transparent;
   justify-content: flex-start;
   border-radius: 100px;
   align-items: center;
@@ -61,6 +61,7 @@ input[type="checkbox"] :checked {
   max-width: 60vw;
 
   margin: auto;
+  margin-top: 4rem;
   box-shadow: inset 20px 20px 20px #04131d, inset -20px -20px 60px #192935;
 }
 
@@ -68,7 +69,6 @@ input[type="checkbox"] :checked {
   animation: load 3s normal forwards;
 
   border-radius: 100px;
-  //   background: colors.$main-blue;
   border: colors.$form-send-bg 3px solid;
   height: 2rem;
   width: 0;
@@ -81,7 +81,30 @@ input[type="checkbox"] :checked {
     width: 0;
   }
   100% {
-    width: 68%;
+    width: 40%;
+  }
+}
+
+@keyframes bounce-in {
+  from {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+    transform: scale(0.85, 1.15);
+  }
+  35% {
+    transform: scale(1.15, 0.85);
+  }
+  65% {
+    transform: scale(0.9, 1.1);
+  }
+  85% {
+    transform: scale(1.02, 0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1, 1);
   }
 }
 
