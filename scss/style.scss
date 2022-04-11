@@ -10,11 +10,12 @@
 @use "./components/sharebuttons";
 @use "./components/results-header";
 @use "./components/results-detail-section";
+@use "./components/explaining_result";
 
 main {
   height: 100%;
   color: colors.$body-text;
-  padding: 2rem;
+  padding: 4rem;
   // vil gerne ændre til 2rem, synes 6 rem er for meget
 }
 

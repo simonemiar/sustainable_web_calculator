@@ -40,7 +40,8 @@ input[type="submit"] {
 
 p,
 a,
-label {
+label,
+details {
   @extend %body-text-font;
 }
 

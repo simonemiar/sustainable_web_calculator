@@ -84,6 +84,13 @@
   background: #8f4e4e;
 }
 
+.explaining_result {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 2rem;
+}
+
 @media only screen and (max-width: 700px) {
   main {
     padding: 2rem !important;
@@ -92,6 +99,10 @@
   .progress {
     max-width: 100%;
     margin: 0;
+  }
+
+  .explaining_result {
+    display: block;
   }
 
   .results-header {
