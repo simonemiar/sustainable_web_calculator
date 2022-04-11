@@ -1,0 +1,40 @@
+@use "../base/fonts";
+@use "../base/colors";
+
+.explaining-title,
+.explaining-details {
+  font-size: 2.1vw;
+}
+
+.explaining_wrapper {
+  display: block;
+}
+
+#explaining_result {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+#explaining_result details {
+  background-color: colors.$form-btn-bg;
+  color: colors.$body-text;
+  box-shadow: inset 0 0 10px #000000;
+  border-radius: 100px;
+  padding: 20px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#explaining_result details[open] {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#explaining_result details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+}

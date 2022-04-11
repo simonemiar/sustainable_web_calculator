@@ -1,4 +1,9 @@
 @use "../base/colors";
+@use "./progress-bars";
+
+#interactive_section {
+  margin-bottom: 6rem;
+}
 
 .take_action_checkbox {
   color: colors.$body-text;
@@ -18,7 +23,7 @@
 
 article {
   width: 100%;
-  margin: 4rem 0 4rem 0;
+  margin: 6rem 0 3rem 0;
 }
 
 .action_one {
@@ -51,38 +56,20 @@ article {
 }
 
 .could_be {
-  justify-content: flex-start;
-  border-radius: 100px;
-  align-items: center;
-  position: relative;
-  padding: 0 5px;
-  display: flex;
-  height: 2.6rem;
-  max-width: 60vw;
-
-  margin: auto;
-  margin-top: 4rem;
-  box-shadow: inset 20px 20px 20px #04131d, inset -20px -20px 60px #192935;
+  @include progress-bars.progress;
+  @include progress-bars.load;
+  margin-top: 2rem;
 }
 
 .could_be_value {
   animation: load 3s normal forwards;
 
   border-radius: 100px;
-  border: colors.$form-send-bg 3px solid;
-  height: 2rem;
+  background-color: colors.$form-send-bg;
+  height: 2.6rem;
   width: 0;
 
   box-shadow: 5px 5px 5px #04131d, -5px -5px 5px #192935;
-}
-
-@keyframes load {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 40%;
-  }
 }
 
 @keyframes bounce-in {

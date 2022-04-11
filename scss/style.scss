@@ -10,12 +10,17 @@
 @use "./components/sharebuttons";
 @use "./components/results-header";
 @use "./components/results-detail-section";
+<<<<<<< HEAD
 @use "./components/index-text-section";
+=======
+@use "./components/loading-screen";
+@use "./components/explaining_result";
+>>>>>>> 08ee47af6d5b9d0c7136f1a53e48ed609750211e
 
 main {
   height: 100%;
   color: colors.$body-text;
-  padding: 2rem;
+  padding: 4rem;
   // vil gerne ændre til 2rem, synes 6 rem er for meget
 }
 
