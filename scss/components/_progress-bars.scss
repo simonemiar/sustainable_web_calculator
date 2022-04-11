@@ -1,7 +1,7 @@
 @use "../base/colors";
 
 :root {
-  --end-progress: 100%;
+  --end-progress: 0%;
 }
 
 @mixin progress {
@@ -23,7 +23,7 @@
   animation: load 3s normal forwards;
 
   border-radius: 100px;
-  background: colors.$clean-color;
+  background: colors.$green-color;
   height: 2rem;
   width: 0;
 

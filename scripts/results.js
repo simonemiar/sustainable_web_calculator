@@ -32,6 +32,8 @@ function displayData(data) {
     <span class="results-details">better</span>`;
 
     progressBar.style.setProperty("--end-progress", `${percentage}%`);
+    progressBar.classList.add("green-bg");
+    percentageText.classList.add("green-txt");
   } else {
     percentageText.innerHTML = `<span id="clean-percentage">  ${badPercentage}% </span>dirty`;
     descriptionDetails.innerHTML = `<span id="dd-title">COME ON GUYS,</span>
@@ -40,6 +42,8 @@ function displayData(data) {
     <span class="results-details">bad</span>`;
 
     progressBar.style.setProperty("--end-progress", `${badPercentage}%`);
+    progressBar.classList.add("red-bg");
+    percentageText.classList.add("red-txt");
   }
 
   //   bar.style.width = `${(data.cleanerThan * 100).toFixed(0) * 10}px`;
