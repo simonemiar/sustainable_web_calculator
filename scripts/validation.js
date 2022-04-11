@@ -5,6 +5,8 @@ const urlInput = document.querySelector("#url_field");
 const errMsg = document.querySelector("#error-msg");
 const sendBtn = document.querySelector(`input[type="submit"]`);
 
+const link = document.querySelector(".send-btn");
+
 function validURL(str) {
   const pattern = new RegExp(
     "^(https?:\\/\\/)?" + // protocol
@@ -50,5 +52,11 @@ introForm.addEventListener("submit", (e) => {
     e.preventDefault();
     urlInput.focus();
     urlInput.select();
-  } else e.preventDefault();
+  } else {
+    e.preventDefault();
+
+    const url = urlInput.value;
+    localStorage.setItem("checkedUrl", url);
+    location.href = "results.html";
+  }
 });
