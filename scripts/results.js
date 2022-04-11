@@ -16,7 +16,6 @@ async function getDataRest() {
   );
 
   const data = await request.json();
-  let counter = 0;
   for (let i = 0; i < data.length; i++) {
     console.log(data[i].url.includes(url));
 
@@ -61,6 +60,8 @@ async function getDataApi() {
 function displayData(data) {
   const cleanerThan = data.cleanerThan;
   let percentage;
+
+  document.querySelector(".loading-screen").style.display = "none";
 
   const progressBar = document.querySelector(".progress-value");
 
