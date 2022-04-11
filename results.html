@@ -40,12 +40,23 @@
         <div class="progress-value"></div>
       </div>
 
-      <!-- <section class="first_section">
-        <div class="website_header">
-          <h2>
-            Carbon results for <span><h3>${url}</h3></span>
-          </h2>
+      <section id="explaining_result">
+        <div class="explaining_wrapper">
+          <h3><span class="explaining-title"></span></h3>
+          <h4><span class="explaining-details"></span></h4>
         </div>
+
+        <details class="top3">
+          <summary>Qurious to see the top 3?</summary>
+          <ol>
+            <li>Number 1</li>
+            <li>Number 2</li>
+            <li>Number 3</li>
+          </ol>
+        </details>
+      </section>
+
+      <!--       
         <div class="share_wrapper">
           <div class="share_text">
             <h4>Share your results</h4>
@@ -61,114 +72,64 @@
               ><img src="assets/mail.svg" alt="mail_icon"
             /></a>
           </div>
-        </div>
-      </section>
-      <section class="second_section">
-        <div class="summary_results">
-          <h2>Oh yeeeah</h2>
-          <h3>
-            Your site is ${something} greener than other pages in your industry
-          </h3>
-        </div>
-      </section>
-      -->
+        </div> -->
 
-      <section class="interactive_section">
+      <section id="interactive_section">
         <article>
           <h2 class="action_one">Take action</h2>
           <h2 class="action_two">and see for yourself</h2>
-          <h4>
-            By ticking off the boxes below, you are able to a possible outcome
-          </h4>
+          <h4>By ticking off the boxes below, you are able to see a possible outcome</h4>
         </article>
         <div class="checkbox_wrapper">
           <div class="checkbox">
-            <input
-              type="checkbox"
-              id="metric1"
-              name="metric1"
-              value="Metric 1"
-              autocomplete="off"
-            />
-            <label class="take_action_checkbox" for="metric1"
-              >Change to a green host</label
-            >
+            <input type="checkbox" id="metric1" name="metric1" value="Metric 1" autocomplete="off" />
+            <label class="take_action_checkbox" for="metric1">Change to a green host</label>
           </div>
           <div class="checkbox">
-            <input
-              type="checkbox"
-              id="metric2"
-              name="metric2"
-              value="Metric 2"
-              autocomplete="off"
-            />
-            <label class="take_action_checkbox" for="metric2"
-              >Make website more efficient</label
-            >
+            <input type="checkbox" id="metric2" name="metric2" value="Metric 2" autocomplete="off" />
+            <label class="take_action_checkbox" for="metric2">Make website more efficient</label>
           </div>
           <div class="checkbox">
-            <input
-              type="checkbox"
-              id="metric3"
-              name="metric3"
-              value="Metric 3"
-              autocomplete="off"
-            />
-            <label class="take_action_checkbox" for="metric3"
-              >Something else you can do</label
-            >
+            <input type="checkbox" id="metric3" name="metric3" value="Metric 3" autocomplete="off" />
+            <label class="take_action_checkbox" for="metric3">Something else you can do</label>
           </div>
         </div>
         <div class="could_be">
-          <div class="could_be_value"></div>
+          <div class="could_be_value">
+            <!-- <h4><span class="text_could_be"></span></h4> -->
+          </div>
         </div>
       </section>
 
       <section class="details_section">
-        <div class="small_text"><h2>HERE IS A FEW OF OUR</h2></div>
-        <div class="big_text"><h2>RECOMMADATIONS</h2></div>
+        <div class="small_text"><h2>Here is a few of our</h2></div>
+        <div class="big_text"><h2>recommendations</h2></div>
+
         <div class="text_on_line">
-          <div class="small_text"><h2>ON HOW TO</h2></div>
-          <div class="big_text"><h2>OPTIMIZE</h2></div>
-          <div class="small_text"><h2>YOUR WEBSITE</h2></div>
+          <div class="small_text"><h2>on how to</h2></div>
+          <div class="big_text"><h2>optimize</h2></div>
+          <div class="small_text"><h2>your website</h2></div>
         </div>
         <details>
           <summary>LIGHTHOUSE TEST</summary>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            sit, adipisci architecto dolore voluptatibus laudantium minima
-            nostrum autem velit harum?
-          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sit, adipisci architecto dolore voluptatibus laudantium minima nostrum autem velit harum?</p>
         </details>
         <details>
           <summary>RESOURCESS OVERVIEW</summary>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            sit, adipisci architecto dolore voluptatibus laudantium minima
-            nostrum autem velit harum?
-          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sit, adipisci architecto dolore voluptatibus laudantium minima nostrum autem velit harum?</p>
         </details>
         <details>
           <summary>OTHER STUFF</summary>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            sit, adipisci architecto dolore voluptatibus laudantium minima
-            nostrum autem velit harum?
-          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sit, adipisci architecto dolore voluptatibus laudantium minima nostrum autem velit harum?</p>
         </details>
       </section>
     </main>
-
-    <footer>
-      <section class="footer-section">
-        <p>social links?</p>
-      </section>
-    </footer>
 
     <div class="loading-screen">
       <p>This site is loading...</p>
     </div>
 
+    <script type="module" src="/scripts/calculator.js"></script>
     <script type="module" src="/scripts/burger.js"></script>
     <script src="/scripts/results.js"></script>
     <script type="module" src="/main.js"></script>
