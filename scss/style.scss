@@ -7,11 +7,13 @@
 
 @use "./components/form";
 @use "./components/sharebuttons";
+@use "./components/results-detail-section";
 
 main {
   height: 100vh;
   color: colors.$body-text;
-  padding: 6rem;
+  padding: 2rem;
+  // vil gerne ændre til 2rem, synes 6 rem er for meget
 }
 
 body {
