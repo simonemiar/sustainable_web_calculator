@@ -50,5 +50,5 @@ introForm.addEventListener("submit", (e) => {
     e.preventDefault();
     urlInput.focus();
     urlInput.select();
-  }
+  } else e.preventDefault();
 });

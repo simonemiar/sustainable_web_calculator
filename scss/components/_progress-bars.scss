@@ -1,0 +1,38 @@
+@use "../base/colors";
+
+@mixin progress {
+  background: rgba(255, 255, 255, 0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 2.6rem;
+  max-width: 60vw;
+
+  margin: auto;
+  box-shadow: inset 20px 20px 20px #04131d, inset -20px -20px 60px #192935;
+}
+
+@mixin progress-value {
+  animation: load 3s normal forwards;
+
+  border-radius: 100px;
+  background: colors.$clean-color;
+  height: 2rem;
+  width: 0;
+
+  box-shadow: 5px 5px 5px #04131d, -5px -5px 5px #192935;
+}
+
+@mixin load {
+  @keyframes load {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 68%;
+    }
+  }
+}
