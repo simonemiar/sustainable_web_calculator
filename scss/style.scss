@@ -12,7 +12,7 @@
 @use "./components/results-detail-section";
 
 main {
-  height: 100vh;
+  height: 100%;
   color: colors.$body-text;
   padding: 2rem;
   // vil gerne ændre til 2rem, synes 6 rem er for meget
