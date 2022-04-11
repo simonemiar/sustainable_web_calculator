@@ -1,5 +1,9 @@
 @use "../base/colors";
 
+:root {
+  --end-progress: 0%;
+}
+
 @mixin progress {
   background: rgba(255, 255, 255, 0.1);
   justify-content: flex-start;
@@ -19,7 +23,7 @@
   animation: load 3s normal forwards;
 
   border-radius: 100px;
-  background: colors.$clean-color;
+  background: colors.$green-color;
   height: 2rem;
   width: 0;
 
@@ -32,7 +36,7 @@
       width: 0;
     }
     100% {
-      width: 68%;
+      width: var(--end-progress);
     }
   }
 }
