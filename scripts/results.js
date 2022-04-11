@@ -1,19 +1,62 @@
 const url = localStorage.getItem("checkedUrl");
 console.log(url);
 
-async function getData() {
+getDataRest();
+
+async function getDataRest() {
+  const options = {
+    headers: {
+      "x-apikey": "61b64c7672a03f5dae822307",
+    },
+  };
+
+  const request = await fetch(
+    `https://gnmmd2ndsemester-6f2a.restdb.io/rest/website-calc`,
+    options
+  );
+
+  const data = await request.json();
+  let counter = 0;
+  for (let i = 0; i < data.length; i++) {
+    console.log(data[i].url.includes(url));
+
+    if (data[i].url.includes(url) || url.includes(data[i].url)) {
+      displayData(data[i]);
+      break;
+    } else {
+      if (i === data.length - 1) {
+        getDataApi();
+      }
+    }
+  }
+}
+
+async function getDataApi() {
   const request = await fetch(
     `https://kea-alt-del.dk/websitecarbon/site/?url=${url}`
   );
 
   const data = await request.json();
 
-  console.log(data);
-
   displayData(data);
-}
 
-getData();
+  const newUrl = {
+    url: url,
+    cleanerThan: data.cleanerThan,
+  };
+  const postData = JSON.stringify(newUrl);
+
+  fetch("https://gnmmd2ndsemester-6f2a.restdb.io/rest/website-calc", {
+    method: "post",
+    headers: {
+      "Content-Type": "application/json",
+      "x-apikey": "61b64c7672a03f5dae822307",
+    },
+    body: postData,
+  })
+    .then((res) => res.json())
+    .then((data) => console.log(data));
+}
 
 function displayData(data) {
   const cleanerThan = data.cleanerThan;
