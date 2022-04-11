@@ -19,3 +19,20 @@ async function getPageSpeed(url) {
 }
 
 getPageSpeed(url);
+
+// take action - metrices
+const checkbox = document.querySelectorAll(".checkbox");
+// const metric_2 = document.querySelector("#metric_2");
+// const metric_3 = document.querySelector("#metric_3");
+const could_be_value = document.querySelector(".could_be_value");
+
+checkbox.forEach((e) => {
+  e.addEventListener("click", () => {
+    if (could_be_value.classList.contains("grow")) {
+      could_be_value.classList.add("grow");
+    } else {
+      could_be_value.classList.remove("grow");
+    }
+    console.log("metric_1");
+  });
+});
