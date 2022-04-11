@@ -5,6 +5,7 @@
 const checkbox = document.querySelectorAll(".checkbox");
 
 let could_be_value = document.querySelector(".could_be_value");
+
 // fake number
 let fakeNumber = 35;
 // remaining percentage of 100 after fakenumber
@@ -13,7 +14,8 @@ let percentage = (100 - fakeNumber) / 3;
 could_be_value = fakeNumber;
 
 
-// let grow = could_be_value + percentage;
+
+let grow = could_be_value + percentage;
 
 // let addTo = checkbox.setAttribute("fakeNumber", "percentage").value;
 // console.log(addTo);
@@ -26,12 +28,12 @@ checkbox.forEach((e) => {
     e.addEventListener("click", () =>{
         console.log("check");
         
+
     });
     // could_be_value.style.setProperty("--end-progress", `${percentage}%`);
 });
 
 
-    
 
 // growPercentage(fakeNumber, percentage);
 // function growPercentage(){
@@ -52,7 +54,7 @@ checkbox.forEach((e) => {
 // //i.e. We want to get 50% of 120.
 // var percentToGet = 50;
  
-// //Calculate the percent.
+// git puCalculate the percent.
 // var percent = (percentToGet / 100) * number;
 
 
