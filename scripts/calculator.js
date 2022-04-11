@@ -5,7 +5,6 @@
 const checkbox = document.querySelectorAll(".checkbox");
 
 let could_be_value = document.querySelector(".could_be_value");
-
 // fake number
 let fakeNumber = 35;
 // remaining percentage of 100 after fakenumber
@@ -14,8 +13,7 @@ let percentage = (100 - fakeNumber) / 3;
 could_be_value = fakeNumber;
 
 
-
-let grow = could_be_value + percentage;
+// let grow = could_be_value + percentage;
 
 // let addTo = checkbox.setAttribute("fakeNumber", "percentage").value;
 // console.log(addTo);
@@ -28,9 +26,8 @@ checkbox.forEach((e) => {
     e.addEventListener("click", () =>{
         console.log("check");
         
-        
     });
-    could_be_value.style.setProperty("--end-progress", `${percentage}%`);
+    // could_be_value.style.setProperty("--end-progress", `${percentage}%`);
 });
 
 
