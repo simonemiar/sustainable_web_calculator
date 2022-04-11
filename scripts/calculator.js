@@ -30,7 +30,7 @@ checkbox.forEach((e) => {
         
         
     });
-    // could_be_value.style.setProperty("--end-progress", `${percentage}%`);
+    could_be_value.style.setProperty("--end-progress", `${percentage}%`);
 });
 
 
