@@ -33,6 +33,13 @@ body {
   width: 100%;
 }
 
+.body_animation {
+  background-image: url(/assets/pollution.svg);
+  background-size: cover;
+  width: 100%;
+  float: left;
+}
+
 .hidden {
   visibility: hidden;
 }

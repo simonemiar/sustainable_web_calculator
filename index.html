@@ -8,6 +8,7 @@
     <title>Sustainable Web Calculator</title>
   </head>
   <body id="index_body">
+    <div class="body_animation"></div>
     <header>
       <nav class="main-nav">
         <div class="logo"><a href="index.html">LOGO</a></div>
@@ -27,12 +28,18 @@
 
       <section class="form-section">
         <h1>Want our advice?</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed maximus felis. Sed lobortis sollicitudin lectus, id interdum nisi volutpat non.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed
+          maximus felis. Sed lobortis sollicitudin lectus, id interdum nisi
+          volutpat non.
+        </p>
         <form action="">
           <div>
             <label for="url_field">Insert your URL here:</label>
             <input type="text" id="url_field" required autocomplete="off" />
-            <span id="error-msg" class="hidden">Please insert a valid URL.</span>
+            <span id="error-msg" class="hidden"
+              >Please insert a valid URL.</span
+            >
           </div>
 
           <div>
@@ -48,26 +55,35 @@
             </select>
           </div>
 
-          <input type="submit" value="CALCULATE NOW" aria-label="submit" class="send-btn" />
+          <input
+            type="submit"
+            value="CALCULATE NOW"
+            aria-label="submit"
+            class="send-btn"
+          />
         </form>
       </section>
       <section class="text_section">
-        <h3>How big of an impact does your website have on the enviorment?</h3>
+        <h3>How big of an impact does your website <br> have on the enviorment?</h3>
         <div class="text_container">
-          <p>
-            Have you heard the sentence “your internet habits are not as clean as you might think” or maybe the question “What's the carbon footprint of the world wide web?”. You might already know a
-            couple of the things we want to share and if not please stay put: <br />
-            The activities that we perform online do actually come with a small fee on the co2 emission everytime we run our devices and access the internet.
-          </p>
-          <p>
-            Currently web accounts represent 2% of all greenhouse gas emissions, which is equivalent to the global aviation industry and the same as Germany, the sixth highest polluting country in the
-            world. <br />It’s hard putting a number on how dirty is your website? Our mission is not web shame your online presence, but instead to create awareness. Our “bip” analyzes your website
-            and comes with a few notes on how to optimize your website to become more sustainable and motivate you and others towards doing better looking forward.
-          </p>
-        </div>
+        <p>
+          Have you heard the sentence “your internet habits are not as clean as you might think” or maybe the question “What's the carbon footprint of the world wide web?”. You might already know a couple of the things we want to share and if not please stay put: <br>
+          The activities that we perform online do actually come with a small fee on the co2 emission everytime we run our devices and access the internet. 
+        </p>
+        <p>
+          Currently web accounts represent 2% of all greenhouse gas emissions, which is equivalent to the global aviation industry and the same as Germany, the sixth highest polluting country in the world. <br>It’s hard putting a number on how dirty is your website? Our mission is not web shame your online presence, but instead to create awareness. Our “bip” analyzes your website and comes with a few notes on how to optimize your website to become more sustainable and motivate you and others towards doing better looking forward.
+        </p>
+      </div>
       </section>
     </main>
 
+    <footer>
+      <section class="footer-section">
+        <p>social links?</p>
+      </section>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+    <script src="/scripts/animation.js"></script>
     <script type="module" src="/scripts/burger.js"></script>
     <script src="/scripts/router.js"></script>
     <script src="/scripts/validation.js"></script>

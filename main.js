@@ -33,3 +33,5 @@ async function getPageSpeed(url) {
 // }
 
 // getPageSpeed(url);
+
+// create gsap animation with tweenlite 
