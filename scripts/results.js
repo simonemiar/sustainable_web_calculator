@@ -75,7 +75,7 @@ async function getDataApi() {
 }
 
 const resultsURL = document.querySelector("#results-url");
-resultsURL.innerHTML = `<span id="results-url">${url}% </span>`;
+resultsURL.innerHTML = `<span id="results-url">${url}</span>`;
 
 function displayData(data) {
   const cleanerThan = data.cleanerThan;
