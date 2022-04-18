@@ -1,4 +1,5 @@
 @use "../base/colors";
+@use "../base/fonts";
 
 /* THE MENU */
 .main-nav {
@@ -7,8 +8,9 @@
   justify-content: space-between;
   align-items: center;
   font-size: 1.1rem;
-  // background: colors.$main-blue;
   padding: 3rem;
+  z-index: 1000;
+  position: relative;
 }
 
 .logo {
@@ -18,6 +20,7 @@
 
 .logo a {
   color: colors.$body-text;
+  @extend %headline5-font;
 }
 
 .nav-links {
@@ -28,6 +31,7 @@
 
 .nav-links li a {
   color: colors.$body-text;
+  @extend %headline5-font;
 }
 
 .burger {

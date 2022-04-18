@@ -5,6 +5,8 @@
   padding-top: 5rem;
   width: 90%;
   margin: auto;
+  position: relative;
+  z-index: 100;
 }
 
 form {
@@ -78,6 +80,7 @@ input[type="submit"]:focus {
 
 #error-msg {
   color: #ff7a00;
+  @extend %body-text-font;
 }
 
 @media only screen and (min-width: 910px) {
@@ -112,4 +115,3 @@ input[type="submit"]:focus {
     }
   }
 }
-

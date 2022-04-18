@@ -18,7 +18,6 @@ main {
   height: 100%;
   color: colors.$body-text;
   padding: 4rem;
-  // vil gerne ændre til 2rem, synes 6 rem er for meget
 }
 
 body {
@@ -31,16 +30,74 @@ body {
   background-image: url(../../assets/backround.svg), colors.$bg-color;
   background-size: cover;
   width: 100%;
-}
-
-.body_animation {
-  background-image: url(/assets/pollution.svg);
-  background-size: cover;
-  width: 100%;
+  z-index: 1;
 }
 
 .hidden {
   visibility: hidden;
+}
+
+// Animation source: (https://codepen.io/WebSonick/pen/nBPZZO).
+// We used this a startingpoint for our desired outcome.
+/* ============================================================================================== 
+SED Innovations
+https://sed.am
+https://mkrtchyan.ga
+================================================================================================= */
+
+@keyframes move-twink-back {
+  from {
+    background-position: -10000px 5000px;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: -10000px 5000px;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: -10000px 5000px;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: -10000px 5000px;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+.body_animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.body_animation {
+  background: transparent url(assets/pollution.svg) repeat top center;
+  z-index: 2;
+
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
 }
 
 @media screen and (max-width: 600px) {

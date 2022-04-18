@@ -25,12 +25,19 @@
 %headline3-font {
   font-family: "social-gothic", sans-serif;
   font-size: calc(1.5rem + (18 - 1) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 550;
 }
 
 %headline4-font {
   font-family: "nimbus-sans", sans-serif;
   font-weight: 300;
   font-size: calc(0.5rem + (18 - 0.5) * ((100vw - 300px) / (1600 - 300)));
+}
+
+%headline5-font {
+  font-family: "social-gothic", sans-serif;
+  font-size: calc(0.7rem + (18 - 0.8) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 300;
 }
 
 input[type="submit"] {
@@ -54,9 +61,12 @@ h2 {
 
 h3 {
   @extend %headline3-font;
-  font-weight: 550;
 }
 
 h4 {
   @extend %headline4-font;
+}
+
+h5 {
+  @extend %headline5-font;
 }

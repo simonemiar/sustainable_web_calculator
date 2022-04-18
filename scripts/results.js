@@ -52,6 +52,9 @@ async function getDataApi() {
     .then((data) => console.log(data));
 }
 
+const resultsURL = document.querySelector("#results-url");
+resultsURL.innerHTML = `<span id="results-url">${url}% </span>`;
+
 function displayData(data) {
   const cleanerThan = data.cleanerThan;
   let percentage;
