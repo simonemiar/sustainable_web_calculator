@@ -19,6 +19,7 @@
 .checkbox_wrapper {
   display: flex;
   gap: 4rem;
+  justify-content: center;
 }
 
 article {
@@ -27,7 +28,6 @@ article {
 }
 
 .action_one {
-  font-size: calc(3rem + (18 - 30) * ((100vw - 300px) / (1600 - 300)));
   color: colors.$form-send-bg;
 }
 
@@ -93,5 +93,16 @@ article {
   to {
     opacity: 1;
     transform: scale(1, 1);
+  }
+}
+
+.take-action-explaining {
+  max-width: 60%;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .take-action-explaining {
+    max-width: 100%;
   }
 }

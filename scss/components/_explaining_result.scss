@@ -1,36 +1,20 @@
 @use "../base/fonts";
 @use "../base/colors";
 
-.explaining_wrapper {
+#explaining_result {
+  margin-top: 4rem;
+  display: flex;
+}
+
+.explaining-percentage {
+  max-width: 80%;
   display: block;
 }
 
-.explaining-title {
-  font-weight: 500;
-}
-
-#explaining_result {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 2rem;
-}
-
 #explaining_result details {
-  color: colors.$body-text;
   cursor: pointer;
-  // padding: 1.3rem;
-  width: fit-content;
   margin-top: 2rem;
-  padding: 2rem;
-}
-
-#explaining_result details[open] {
-  // padding: 1.3rem;
   color: colors.$body-text;
-  background-color: colors.$form-btn-bg;
-  box-shadow: inset 0 0 10px #000000;
-  border-radius: 10px;
 }
 
 #explaining_result details[open] summary {
@@ -38,17 +22,39 @@
   margin-bottom: 10px;
 }
 
-summary {
-  @extend %body-text-font;
+.orange {
+  color: colors.$form-send-bg;
+}
+
+.big {
+  @extend %headline2-font;
+  font-size: 6vw;
+}
+
+.smaller {
+  @extend %headline3-font;
+  font-size: 2.5vw;
+  font-weight: 500;
+}
+.small {
+  @extend %headline2-font;
+  font-size: 4vw;
+  font-weight: 500;
+  // line-height: 2.5rem;
 }
 
 @media only screen and (max-width: 700px) {
   #explaining_result {
     display: block;
+    max-width: 100%;
+  }
+
+  .explaining-percentage {
+    max-width: 100%;
+    display: block;
   }
 
   .top3-wrapper {
-    display: flex;
-    justify-content: end;
+    width: 100%;
   }
 }

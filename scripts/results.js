@@ -114,14 +114,11 @@ function displayData(data) {
   });
 
   // smaller text explaining the result, shown under the bar
-  const explainingTitle = document.querySelector(".explaining-title");
-  const explainingDetails = document.querySelector(".explaining-details");
+  const explainingPercentage = document.querySelector(".explaining-percentage");
 
   if (cleanerThan > 0.5) {
-    explainingTitle.innerHTML = `<span class="explaining-title">Your website is ${percentage}% green</span>`;
-    // explainingDetails.innerHTML = `<span class="explaining-details">This number is compared to other pages tested in your industry.</span>`;
+    explainingPercentage.innerHTML = `<span class="explaining-title">Your website is ${percentage}% green, this is a number compared to other pages tested in your industry. Your industry is the category you chose when running the calculation, on the frontpage.</span>`;
   } else {
-    explainingTitle.innerHTML = `<span class="explaining-title">Your website is ${percentage}% dirty</span>`;
-    // explainingDetails.innerHTML = `<span class="explaining-details">This number is compared to other pages tested in your industry.</span>`;
+    explainingPercentage.innerHTML = `<span class="explaining-title">Your website is ${percentage}% dirty, this is a number compared to other pages tested in your industry. Your industry is the category you chose when running the calculation, on the frontpage.</span>`;
   }
 }

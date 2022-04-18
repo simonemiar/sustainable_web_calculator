@@ -1,3 +1,5 @@
+@use "../base/colors";
+
 // @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 @import url("https://use.typekit.net/fed6jan.css");
 @import url("https://use.typekit.net/fed6jan.css");
@@ -5,6 +7,7 @@
 %body-text-font {
   font-family: "nimbus-sans", sans-serif;
   font-weight: 300;
+  line-height: 1.5rem;
 }
 
 %headline-font {
@@ -44,8 +47,12 @@ input[type="submit"] {
   font-size: calc(1rem + (18 - 1) * ((100vw - 300px) / (1600 - 300)));
 }
 
+a {
+  @extend %body-text-font;
+  color: colors.$form-send-bg;
+}
+
 p,
-a,
 label,
 details {
   @extend %body-text-font;
