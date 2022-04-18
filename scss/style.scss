@@ -27,7 +27,8 @@ body {
 }
 
 #index_body {
-  background-image: url(../public/assets/backround.svg), colors.$bg-color;
+  // background-image: url(../public/backround.svg), colors.$bg-color;
+  background-image: url("./backround.svg"), colors.$bg-color;
   background-size: cover;
   width: 100%;
   z-index: 1;
@@ -90,7 +91,7 @@ https://mkrtchyan.ga
 }
 
 .body_animation {
-  background: transparent url(../public/assets/pollution.svg) repeat top center;
+  background: transparent url(./pollution.svg) repeat top center;
   z-index: 2;
 
   -moz-animation: move-twink-back 200s linear infinite;
