@@ -1,6 +1,19 @@
 const url = localStorage.getItem("checkedUrl");
 console.log(url);
 
+async function getPageSpeed(url) {
+  const request = await fetch(
+    `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${url}&key=AIzaSyCJpmbyPCYEITV04onRwPknKcJkdSdEhvU`
+  );
+  const data = await request.json();
+  console.log(url);
+  console.log(data);
+
+  document.querySelector("#performance").textContent = `${
+    data.lighthouseResult.categories.performance.score * 100
+  }%`;
+}
+
 getDataRest();
 
 async function getDataRest() {
@@ -10,7 +23,14 @@ async function getDataRest() {
     },
   };
 
-  const request = await fetch(`https://gnmmd2ndsemester-6f2a.restdb.io/rest/website-calc`, options);
+  const request = await fetch(
+    `https://gnmmd2ndsemester-6f2a.restdb.io/rest/website-calc`,
+    options
+  );
+
+  if (url.includes("https://")) {
+    getPageSpeed(url);
+  } else getPageSpeed(`http://${url}`);
 
   const data = await request.json();
   for (let i = 0; i < data.length; i++) {
@@ -28,7 +48,9 @@ async function getDataRest() {
 }
 
 async function getDataApi() {
-  const request = await fetch(`https://kea-alt-del.dk/websitecarbon/site/?url=${url}`);
+  const request = await fetch(
+    `https://kea-alt-del.dk/websitecarbon/site/?url=${url}`
+  );
 
   const data = await request.json();
 
@@ -81,7 +103,9 @@ function displayData(data) {
   } else {
     percentage = ((1 - cleanerThan) * 100).toFixed(0);
 
-    percentageText.innerHTML = `<span id="clean-percentage">  ${[percentage]}% </span>dirty`;
+    percentageText.innerHTML = `<span id="clean-percentage">  ${[
+      percentage,
+    ]}% </span>dirty`;
     descriptionDetails.innerHTML = `<span id="dd-title">COME ON GUYS,</span>
     <span class="results-details">this is</span>
     <span class="results-details">really</span>
