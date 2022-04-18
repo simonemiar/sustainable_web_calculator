@@ -28,6 +28,7 @@ article {
 
 .action_one {
   font-size: calc(3rem + (18 - 30) * ((100vw - 300px) / (1600 - 300)));
+  color: colors.$form-send-bg;
 }
 
 .action_two {
@@ -92,12 +93,5 @@ article {
   to {
     opacity: 1;
     transform: scale(1, 1);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .checkbox_wrapper {
-    display: flex;
-    flex-direction: column;
   }
 }

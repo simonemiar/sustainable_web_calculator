@@ -115,12 +115,10 @@ function displayData(data) {
   const explainingDetails = document.querySelector(".explaining-details");
 
   if (cleanerThan > 0.5) {
-    explainingTitle.innerHTML = `<span class="explaining-title">Your website is ${percentage}% greener than other pages tested in your industry</span>`;
-    explainingDetails.innerHTML = `<span class="explaining-details">This means that ...,</span>
-    <span class="explaining-details">To compare it to xxx ...</span>`;
+    explainingTitle.innerHTML = `<span class="explaining-title">Your website is ${percentage}% green</span>`;
+    // explainingDetails.innerHTML = `<span class="explaining-details">This number is compared to other pages tested in your industry.</span>`;
   } else {
-    explainingTitle.innerHTML = `<span class="explaining-title">Your website is ${percentage}% dirtier than other pages tested in your industry</span>`;
-    explainingDetails.innerHTML = `<span class="explaining-details">To compare this to xxx ... </span>
-    `;
+    explainingTitle.innerHTML = `<span class="explaining-title">Your website is ${percentage}% dirty</span>`;
+    // explainingDetails.innerHTML = `<span class="explaining-details">This number is compared to other pages tested in your industry.</span>`;
   }
 }
