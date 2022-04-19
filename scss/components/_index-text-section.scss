@@ -6,14 +6,16 @@
   height: 100%;
   margin: auto;
 }
-  
-.text_section .header_text{
+
+.text_section .header_text {
   width: 90%;
   margin: auto;
   padding-top: 5rem;
   padding-bottom: 20px;
+  display: grid;
+  gap: 1rem;
 }
-  
+
 .text_section .text_container p {
   padding-bottom: 20px;
   max-width: 60ch;
@@ -26,10 +28,9 @@
     padding: 0px 20px 20px 0px;
   }
 
-  .text_section .header_text{
+  .text_section .header_text {
     padding-top: 10rem;
   }
-
 
   .text_section .text_container p {
     padding: 0px 20px 20px 0px;
