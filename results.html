@@ -11,6 +11,7 @@
       <nav class="main-nav">
         <div class="logo"><img src="./public/logo.svg" alt="web carbon calculator logo in white" /> <a href="index.html"></a></div>
         <ul class="nav-links">
+          <li><a href="#">HOME</a></li>
           <li><a href="#">GET THE ECO BADGE</a></li>
           <li><a href="#">FAQ</a></li>
         </ul>
@@ -24,6 +25,16 @@
     <main>
       <section class="results-header">
         <h1>Carbon results for <span id="results-url"></span></h1>
+        <!-- <div class="share_wrapper">
+          <div class="share_text">
+            <h4>Share your results</h4>
+          </div>
+          <div class="share_buttons">
+            <a href="#" target="blank"><img src="assets/facebook.svg" alt="facebook_icon" /></a>
+            <a href="#" target="blank"><img src="assets/linkedin.svg" alt="linkedin_icon" /></a>
+            <a href="#" target="blank"><img src="assets/mail.svg" alt="mail_icon" /></a>
+          </div>
+        </div> -->
 
         <dl>
           <dt><span id="clean-percentage"> </span></dt>
@@ -41,49 +52,45 @@
       </div>
 
       <section id="explaining_result">
-        <p><span class="explaining-percentage"></span></p>
+        <div class="col_left">
+          <p><span class="explaining-percentage"></span></p>
+          <div class="share_wrapper">
+            <div class="share_text">
+              <h2 class="smaller">Share your results</h2>
+            </div>
+            <div class="share_buttons">
+              <a href="#" target="blank"><img class="social_icon" src="./facebook.svg" alt="facebook_icon" /></a>
+              <a href="#" target="blank"><img class="social_icon" src="./linkedin.svg" alt="linkedin_icon" /></a>
+              <a href="#" target="blank"><img class="social_icon" src="./mail.svg" alt="mail_icon" /></a>
+            </div>
+          </div>
+        </div>
 
-        <div class="top3-container">
-          <h2 class="big">Curious</h2>
-          <h2 class="smaller">to see the <span class="orange">top 3</span></h2>
-          <h2 class="smaller">in your industry?</h2>
+        <div class="col_right">
+          <div class="top3-container">
+            <h2 class="big">Curious</h2>
+            <h2 class="smaller">to see the <span class="orange">top 3</span></h2>
+            <h2 class="smaller">in your industry?</h2>
 
-          <details class="top3-wrapper">
-            <summary class="small orange">Click here!</summary>
-            <ol>
-              <li><p>1. Company name</p></li>
-              <li><p>2. Company name</p></li>
-              <li><p>3. Company name</p></li>
-            </ol>
-          </details>
+            <details class="top3-wrapper">
+              <summary class="small orange">Click here!</summary>
+              <ol>
+                <li><p>1. Company name</p></li>
+                <li><p>2. Company name</p></li>
+                <li><p>3. Company name</p></li>
+              </ol>
+            </details>
+          </div>
         </div>
       </section>
-
-      <!--       
-        <div class="share_wrapper">
-          <div class="share_text">
-            <h4>Share your results</h4>
-          </div>
-          <div class="share_buttons">
-            <a href="#" target="blank"
-              ><img src="assets/facebook.svg" alt="facebook_icon"
-            /></a>
-            <a href="#" target="blank"
-              ><img src="assets/linkedin.svg" alt="linkedin_icon"
-            /></a>
-            <a href="#" target="blank"
-              ><img src="assets/mail.svg" alt="mail_icon"
-            /></a>
-          </div>
-        </div> -->
 
       <section id="interactive_section">
         <article>
           <h2 class="action_two">See how you can do better</h2>
           <h2 class="action_one">and take action</h2>
           <p class="take-action-explaining">
-            By ticking off the boxes below, you are able to see a possible outcome, and where you have room and potential to grow. If you would like to see more in depth details, you can find this
-            down below - or read even more about sustainable web development and hosting in our <a href="#">FAQ</a>.
+            With the boxes below you can see our suggestions for optimizing your website. By ticking them off, you can see the estimated change. If you would like to see more in depth details, you can
+            see that below - or read even more about sustainable web development and hosting in our <a href="#">FAQ</a>.
           </p>
         </article>
         <div class="checkbox_wrapper">
