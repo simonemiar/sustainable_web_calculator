@@ -9,8 +9,9 @@
   <body>
     <header>
       <nav class="main-nav">
-        <div class="logo"><a href="index.html">LOGO</a></div>
+        <div class="logo"><img src="./public/logo.svg" alt="web carbon calculator logo in white" /> <a href="index.html"></a></div>
         <ul class="nav-links">
+          <li><a href="#">HOME</a></li>
           <li><a href="#">GET THE ECO BADGE</a></li>
           <li><a href="#">FAQ</a></li>
         </ul>
@@ -23,7 +24,17 @@
     </header>
     <main>
       <section class="results-header">
-        <h1>Carbonresults for <span id="results-url"></span></h1>
+        <h1>Carbon results for <span id="results-url"></span></h1>
+        <!-- <div class="share_wrapper">
+          <div class="share_text">
+            <h4>Share your results</h4>
+          </div>
+          <div class="share_buttons">
+            <a href="#" target="blank"><img src="assets/facebook.svg" alt="facebook_icon" /></a>
+            <a href="#" target="blank"><img src="assets/linkedin.svg" alt="linkedin_icon" /></a>
+            <a href="#" target="blank"><img src="assets/mail.svg" alt="mail_icon" /></a>
+          </div>
+        </div> -->
 
         <dl>
           <dt><span id="clean-percentage"> </span></dt>
@@ -41,49 +52,45 @@
       </div>
 
       <section id="explaining_result">
-        <p><span class="explaining-percentage"></span></p>
+        <div class="col_left">
+          <p><span class="explaining-percentage"></span></p>
+          <div class="share_wrapper">
+            <div class="share_text">
+              <h2 class="smaller">Share your results</h2>
+            </div>
+            <div class="share_buttons">
+              <a href="#" target="blank"><img class="social_icon" src="./facebook.svg" alt="facebook_icon" /></a>
+              <a href="#" target="blank"><img class="social_icon" src="./linkedin.svg" alt="linkedin_icon" /></a>
+              <a href="#" target="blank"><img class="social_icon" src="./mail.svg" alt="mail_icon" /></a>
+            </div>
+          </div>
+        </div>
 
-        <div class="top3-container">
-          <h2 class="orange big">Qurious</h2>
-          <h2 class="smaller">to see the <span class="orange">top 3</span></h2>
-          <h2 class="smaller">in your industry?</h2>
+        <div class="col_right">
+          <div class="top3-container">
+            <h2 class="big">Curious</h2>
+            <h2 class="smaller">to see the <span class="orange">top 3</span></h2>
+            <h2 class="smaller">in your industry?</h2>
 
-          <details class="top3-wrapper">
-            <summary class="small orange">Click here!</summary>
-            <ol>
-              <li><p>1. Company name</p></li>
-              <li><p>2. Company name</p></li>
-              <li><p>3. Company name</p></li>
-            </ol>
-          </details>
+            <details class="top3-wrapper">
+              <summary class="small orange">Click here!</summary>
+              <ol>
+                <li><p>1. Company name</p></li>
+                <li><p>2. Company name</p></li>
+                <li><p>3. Company name</p></li>
+              </ol>
+            </details>
+          </div>
         </div>
       </section>
 
-      <!--       
-        <div class="share_wrapper">
-          <div class="share_text">
-            <h4>Share your results</h4>
-          </div>
-          <div class="share_buttons">
-            <a href="#" target="blank"
-              ><img src="assets/facebook.svg" alt="facebook_icon"
-            /></a>
-            <a href="#" target="blank"
-              ><img src="assets/linkedin.svg" alt="linkedin_icon"
-            /></a>
-            <a href="#" target="blank"
-              ><img src="assets/mail.svg" alt="mail_icon"
-            /></a>
-          </div>
-        </div> -->
-
       <section id="interactive_section">
         <article>
-          <h2 class="action_one">Take action</h2>
-          <h2 class="action_two">and see how you can do better</h2>
+          <h2 class="action_two">See how you can do better</h2>
+          <h2 class="action_one">and take action</h2>
           <p class="take-action-explaining">
-            By ticking off the boxes below, you are able to see a possible outcome, and where you have room and potential to grow. If you would like to see more in depth details, you can find this
-            down below - or read even more about sustainable web development and hosting in our <a href="#">FAQ</a>.
+            With the boxes below you can see our suggestions for optimizing your website. By ticking them off, you can see the estimated change. If you would like to see more in depth details, you can
+            see that below - or read even more about sustainable web development and hosting in our <a href="#">FAQ</a>.
           </p>
         </article>
         <div class="checkbox_wrapper">
@@ -93,11 +100,11 @@
           </div>
           <div class="checkbox">
             <input type="checkbox" id="metric2" name="metric2" value="Metric 2" autocomplete="off" />
-            <label class="take_action_checkbox" for="metric2">Make website more efficient</label>
+            <label class="take_action_checkbox" for="metric2">Optimize images and media</label>
           </div>
           <div class="checkbox">
             <input type="checkbox" id="metric3" name="metric3" value="Metric 3" autocomplete="off" />
-            <label class="take_action_checkbox" for="metric3">Something else you can do</label>
+            <label class="take_action_checkbox" for="metric3">Clean up and optimize scripts</label>
           </div>
         </div>
         <div class="could_be">
@@ -117,16 +124,16 @@
           <div class="small_text"><h2>your website</h2></div>
         </div>
         <details>
-          <summary>Lighthouse test ▼</summary>
+          <summary>See how you scored on the lighthouse test ▼</summary>
           <h4>Performance</h4>
           <p id="performance"></p>
         </details>
         <details>
-          <summary>Recources overview ▼</summary>
+          <summary>Our recommendations for green-hosted webistes ▼</summary>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sit, adipisci architecto dolore voluptatibus laudantium minima nostrum autem velit harum?</p>
         </details>
         <details>
-          <summary>Other stuff ▼</summary>
+          <summary>Summary of how to optimize your website ▼</summary>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sit, adipisci architecto dolore voluptatibus laudantium minima nostrum autem velit harum?</p>
         </details>
       </section>

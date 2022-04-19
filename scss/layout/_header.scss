@@ -14,8 +14,9 @@
 }
 
 .logo {
-  padding: 0 4rem 0 0rem;
-  z-index: 99;
+  padding: 0 1rem 0 1rem;
+  // z-index: 99;
+  margin-top: 5rem;
 }
 
 .logo a {
@@ -25,8 +26,9 @@
 
 .nav-links {
   display: flex;
-  width: 40%;
-  justify-content: space-around;
+  // width: 40%;
+  justify-content: end;
+  gap: 6rem;
 }
 
 .nav-links li a {
@@ -61,10 +63,19 @@
   left: 0%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .burger {
     display: block;
   }
+
+  .main-nav {
+    padding: 3rem 3rem 6rem 2rem;
+  }
+
+  .logo {
+    padding: 0;
+  }
+
   .nav-links {
     position: fixed;
     top: 8vh;
