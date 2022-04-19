@@ -47,6 +47,41 @@
   margin-bottom: 10px;
 }
 
+// .green_host{
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   grid-template-rows: repeat(6, 1fr);
+//   justify-content: center;
+// }
+
+.green_host {
+  display: grid;
+
+  li {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #eee;
+  }
+
+  .unordered_list li:last-child {
+    grid-column: 1 / 4;
+  }
+}
+
+
+.lighthouse{
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+
+  #performance{
+    font-size: 40px;
+
+  }
+}
+
+
+
 // ************** media query ************** //
 
 @media only screen and (min-width: 513px) {
