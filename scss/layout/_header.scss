@@ -14,8 +14,9 @@
 }
 
 .logo {
-  padding: 0 4rem 0 0rem;
+  padding: 0 4rem 0 2rem;
   z-index: 99;
+  margin-top: 5rem;
 }
 
 .logo a {
@@ -26,7 +27,8 @@
 .nav-links {
   display: flex;
   width: 40%;
-  justify-content: space-around;
+  justify-content: end;
+  gap: 6rem;
 }
 
 .nav-links li a {
