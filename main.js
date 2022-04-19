@@ -1,6 +1,5 @@
 import "./scss/style.scss";
 import "./scripts/burger";
-import "./scripts/validation";
 
 // page speed insights key:  AIzaSyCJpmbyPCYEITV04onRwPknKcJkdSdEhvU
 

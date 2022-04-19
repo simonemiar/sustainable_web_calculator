@@ -57,6 +57,6 @@ introForm.addEventListener("submit", (e) => {
 
     const url = urlInput.value;
     localStorage.setItem("checkedUrl", url);
-    location.href = "results.html";
+    location.href = "../results.html";
   }
 });
