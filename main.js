@@ -1,11 +1,15 @@
 import "./scss/style.scss";
+import "./scripts/burger";
+import "./scripts/validation";
 
 // page speed insights key:  AIzaSyCJpmbyPCYEITV04onRwPknKcJkdSdEhvU
 
 const url = "http://georgendesign.com/";
 
 async function getCarbonData(url) {
-  const request = await fetch(`https://kea-alt-del.dk/websitecarbon/site/?url=${url}`);
+  const request = await fetch(
+    `https://kea-alt-del.dk/websitecarbon/site/?url=${url}`
+  );
   const data = await request.json();
   console.log(data);
 }
@@ -20,7 +24,9 @@ async function getCarbonData(url) {
 // getCarbonData(url);
 
 async function getPageSpeed(url) {
-  const request = await fetch(`https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${url}&key=AIzaSyCJpmbyPCYEITV04onRwPknKcJkdSdEhvU`);
+  const request = await fetch(
+    `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${url}&key=AIzaSyCJpmbyPCYEITV04onRwPknKcJkdSdEhvU`
+  );
   const data = await request.json();
   console.log(data);
 }
@@ -34,4 +40,4 @@ async function getPageSpeed(url) {
 
 // getPageSpeed(url);
 
-// create gsap animation with tweenlite 
+// create gsap animation with tweenlite
