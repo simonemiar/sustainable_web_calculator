@@ -16,7 +16,8 @@
 .logo {
   padding: 0 1rem 0 1rem;
   // z-index: 99;
-  margin-top: 5rem;
+  // margin-top: 5rem;
+  margin: 0 auto;
 }
 
 .logo a {
@@ -24,16 +25,17 @@
   @extend %headline5-font;
 }
 
-.nav-links {
-  display: flex;
-  // width: 40%;
-  justify-content: end;
-  gap: 6rem;
-}
+// .nav-links {
+//   display: flex;
+//   // width: 40%;
+//   justify-content: end;
+//   gap: 6rem;
+// }
 
 .nav-links li a {
   color: colors.$body-text;
   @extend %headline5-font;
+
 }
 
 .burger {
