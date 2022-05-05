@@ -46,13 +46,13 @@ article {
   height: 3rem;
   width: 3rem;
   border-radius: 8px;
-  border: 3px solid colors.$form-send-bg;
+  border: 3px solid colors.$form-send-bg2;
   background-color: transparent;
   transition-duration: 0.3s;
 }
 
 .checkbox > input:checked {
-  background-color: colors.$form-send-bg;
+  background-color: colors.$form-send-bg2;
   animation: bounce-in 0.3s normal forwards;
 }
 
@@ -66,7 +66,7 @@ article {
   animation: load 3s normal forwards;
 
   border-radius: 100px;
-  background-color: colors.$form-send-bg;
+  background-color: colors.$form-send-bg2;
   height: 2.6rem;
   width: 0;
 
